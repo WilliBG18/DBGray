@@ -100,6 +100,8 @@ namespace DBGray
         {
             int numCol = GetNumCollumns();
             string[] st = new string[numCol];
+            if (numCol == 0)
+                return st;
 
             string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA . COLUMNS WHERE TABLE_SCHEMA = 'dbGray' AND TABLE_NAME = '" + table + "';";
             MySqlConnection connection = new MySqlConnection(conn.GetConStr());
@@ -111,6 +113,29 @@ namespace DBGray
             while (reader.Read())
             {
                 st[i] = reader[0].ToString();
+                i++;
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return st;
+        }
+        public Type[] GetAttributeTypes()
+        {
+            int numCol = GetNumCollumns();
+            Type[] st = new Type[numCol];
+
+            string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA . COLUMNS WHERE TABLE_SCHEMA = 'dbGray' AND TABLE_NAME = '" + table + "';";
+            MySqlConnection connection = new MySqlConnection(conn.GetConStr());
+            MySqlCommand command = new MySqlCommand(query, connection);
+            connection.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            int i = 0;
+            while (reader.Read())
+            {
+                st[i] = reader[0].GetType();
                 i++;
             }
 

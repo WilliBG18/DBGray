@@ -1,6 +1,6 @@
 ﻿namespace DBGray
 {
-    partial class ViewTableForm
+    partial class InsertTupleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,59 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tuplePanel = new System.Windows.Forms.Panel();
+            this.InsertTuplePnl = new System.Windows.Forms.Panel();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.insertButton = new System.Windows.Forms.Button();
-            this.tuplePanel.SuspendLayout();
+            this.InsertTuplePnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tuplePanel
+            // InsertTuplePnl
             // 
-            this.tuplePanel.AutoScroll = true;
-            this.tuplePanel.Controls.Add(this.hScrollBar1);
-            this.tuplePanel.Location = new System.Drawing.Point(13, 13);
-            this.tuplePanel.Name = "tuplePanel";
-            this.tuplePanel.Size = new System.Drawing.Size(524, 261);
-            this.tuplePanel.TabIndex = 0;
+            this.InsertTuplePnl.AutoScroll = true;
+            this.InsertTuplePnl.Controls.Add(this.hScrollBar1);
+            this.InsertTuplePnl.Location = new System.Drawing.Point(13, 13);
+            this.InsertTuplePnl.Name = "InsertTuplePnl";
+            this.InsertTuplePnl.Size = new System.Drawing.Size(549, 441);
+            this.InsertTuplePnl.TabIndex = 0;
             // 
             // hScrollBar1
             // 
-            this.hScrollBar1.Location = new System.Drawing.Point(226, 240);
+            this.hScrollBar1.Location = new System.Drawing.Point(229, 420);
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.Size = new System.Drawing.Size(80, 21);
             this.hScrollBar1.TabIndex = 0;
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(226, 297);
+            this.insertButton.Location = new System.Drawing.Point(247, 488);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(93, 23);
+            this.insertButton.Size = new System.Drawing.Size(75, 23);
             this.insertButton.TabIndex = 1;
-            this.insertButton.Text = "Insert Tuple";
+            this.insertButton.Text = "Insert";
             this.insertButton.UseVisualStyleBackColor = true;
             this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
             // 
-            // ViewTableForm
+            // InsertTupleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 342);
+            this.ClientSize = new System.Drawing.Size(574, 523);
             this.Controls.Add(this.insertButton);
-            this.Controls.Add(this.tuplePanel);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ViewTableForm";
-            this.Text = "Form4";
-            this.tuplePanel.ResumeLayout(false);
+            this.Controls.Add(this.InsertTuplePnl);
+            this.Name = "InsertTupleForm";
+            this.Text = "Form5";
+            this.InsertTuplePnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel tuplePanel;
+        private System.Windows.Forms.Panel InsertTuplePnl;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.Button insertButton;
-
-
     }
 }

@@ -60,5 +60,12 @@ namespace DBGray
                 pointY += 22;
             }
         }
+
+        private void insertButton_Click(object sender, EventArgs e)
+        {
+            InsertTupleForm tupleForm = new InsertTupleForm(conn, table);
+            tupleForm.Show();
+            this.Close();
+        }
     }
 }
