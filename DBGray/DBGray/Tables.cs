@@ -10,13 +10,15 @@ namespace DBGray
     class Tables
     {
         ConnString conn;
+        string table;
 
-        public Tables(ConnString cs)
+        public Tables(ConnString cs, string table)
         {
             conn = cs;
+            this.table = table;
         }
 
-        public void SelectTable(string table)
+        public void SelectTable()
         {
             MySqlConnection connection = new MySqlConnection(conn.GetConStr());
             connection.Open();
@@ -27,7 +29,8 @@ namespace DBGray
                 veiwTable.Show();
             }
         }
-        public string[] DisplayTable(string table)
+
+        public int GetNumCollumns()
         {
             string query = "SELECT * From " + table;
             MySqlConnection connection = new MySqlConnection(conn.GetConStr());
@@ -35,22 +38,86 @@ namespace DBGray
             connection.Open();
             MySqlDataReader reader = command.ExecuteReader();
 
-            List<string> rowList = new List<string>();
-
+            int numCol = 0;
             while (reader.Read())
             {
-                rowList.Add(reader[0].ToString());
+                numCol = reader.FieldCount;
             }
-
-            string[] rows = new string[rowList.Count];
-            for (int i = 0; i < rows.Length; i++)
-                rows[i] = rowList.ElementAt(i);
 
             reader.Close();
             connection.Close();
 
-            return rows;
+            return numCol;
         }
-        
+
+        public int GetNumTuples()
+        {
+            string query = "SELECT Count(*) From " + table;
+            MySqlConnection connection = new MySqlConnection(conn.GetConStr());
+            MySqlCommand command = new MySqlCommand(query, connection);
+            connection.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            int numRows = 0;
+            while (reader.Read())
+            {
+                numRows = reader.GetInt32(0);
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return numRows;
+        }
+
+        public string[,] GetTuples()
+        {
+            int numCol = GetNumCollumns();
+            int numRows = GetNumTuples();
+            string[,] st = new string[numCol,numRows];
+
+            string query = "SELECT * From " + table;
+            MySqlConnection connection = new MySqlConnection(conn.GetConStr());
+            MySqlCommand command = new MySqlCommand(query, connection);
+            connection.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            int c = 0;
+            while (reader.Read())
+            {
+                for (int i = 0; i < numCol; i++)
+                    st[i, c] = reader[i].ToString();
+                c++;
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return st;
+        }
+
+        public string[] GetAttributeNames()
+        {
+            int numCol = GetNumCollumns();
+            string[] st = new string[numCol];
+
+            string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA . COLUMNS WHERE TABLE_SCHEMA = 'dbGray' AND TABLE_NAME = '" + table + "';";
+            MySqlConnection connection = new MySqlConnection(conn.GetConStr());
+            MySqlCommand command = new MySqlCommand(query, connection);
+            connection.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            int i = 0;
+            while (reader.Read())
+            {
+                st[i] = reader[0].ToString();
+                i++;
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return st;
+        }
     }
 }

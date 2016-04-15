@@ -36,8 +36,8 @@ namespace DBGray
         private void button1_Click(object sender, EventArgs e)
         {
             string table = TablesLB.SelectedItem.ToString();
-            Tables tables = new Tables(conn);
-            tables.SelectTable(table);
+            Tables tables = new Tables(conn, table);
+            tables.SelectTable();
         }
     }
 }

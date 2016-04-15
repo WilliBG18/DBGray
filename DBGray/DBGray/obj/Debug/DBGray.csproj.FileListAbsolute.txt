@@ -34,3 +34,15 @@ D:\School\DBGRay-Krause\DBGray\DBGray\obj\Debug\DBGray.CredentialsForm.resources
 D:\School\DBGRay-Krause\DBGray\DBGray\obj\Debug\DBGray.DatabasesForm.resources
 D:\School\DBGRay-Krause\DBGray\DBGray\obj\Debug\DBGray.DBTablesForm.resources
 D:\School\DBGRay-Krause\DBGray\DBGray\obj\Debug\DBGray.ViewTableForm.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.exe.config
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.exe
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.pdb
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.exe
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.pdb
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csprojResolveAssemblyReference.cache
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.CredentialsForm.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.DatabasesForm.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.DBTablesForm.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.Properties.Resources.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.ViewTableForm.resources
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csproj.GenerateResource.Cache

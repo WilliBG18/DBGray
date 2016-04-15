@@ -12,6 +12,7 @@ namespace DBGray
 {
     public partial class ViewTableForm : Form
     {
+        readonly int TEXTBOX_WIDTH = 100;
         ConnString conn;
         string table;
 
@@ -24,11 +25,39 @@ namespace DBGray
         }
         private void DisplayTable()
         {
-            Tables tables = new Tables(conn);
-            string[] row = tables.DisplayTable(table);
-            for (int i = 0; i < row.Length; i++)
+            Tables tables = new Tables(conn, table);
+            int numRows = tables.GetNumTuples();
+            int numColums = tables.GetNumCollumns();
+            string[,] data = tables.GetTuples();
+            string[] attributes = tables.GetAttributeNames();
+
+            int pointX = 0;
+            int pointY = 0;
+
+            for (int i = 0; i < numColums; i++)
             {
-                TuplesLB.Items.Add(row[i]);
+                Label a = new Label();
+                a.Text = attributes[i];
+                a.Location = new Point(pointX, pointY);
+                tuplePanel.Controls.Add(a);
+                tuplePanel.Show();
+                pointX += TEXTBOX_WIDTH;
+            }
+            pointY += 30;
+            for (int y = 0; y < numRows; y++)
+            {
+                pointX = 0;
+                for (int x = 0; x < numColums; x++)
+                {
+                    TextBox a = new TextBox();
+                    a.ReadOnly = true;
+                    a.Text = data[x,y];
+                    a.Location = new Point(pointX, pointY);
+                    tuplePanel.Controls.Add(a);
+                    tuplePanel.Show();
+                    pointX += TEXTBOX_WIDTH;
+                }
+                pointY += 22;
             }
         }
     }

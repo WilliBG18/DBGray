@@ -28,31 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TuplesLB = new System.Windows.Forms.ListBox();
+            this.tuplePanel = new System.Windows.Forms.Panel();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.tuplePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TuplesLB
+            // tuplePanel
             // 
-            this.TuplesLB.FormattingEnabled = true;
-            this.TuplesLB.Location = new System.Drawing.Point(0, 0);
-            this.TuplesLB.Name = "TuplesLB";
-            this.TuplesLB.Size = new System.Drawing.Size(412, 264);
-            this.TuplesLB.TabIndex = 0;
+            this.tuplePanel.AutoScroll = true;
+            this.tuplePanel.Controls.Add(this.hScrollBar1);
+            this.tuplePanel.Location = new System.Drawing.Point(13, 13);
+            this.tuplePanel.Name = "tuplePanel";
+            this.tuplePanel.Size = new System.Drawing.Size(524, 261);
+            this.tuplePanel.TabIndex = 0;
+            // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(226, 240);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(80, 21);
+            this.hScrollBar1.TabIndex = 0;
             // 
             // ViewTableForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 325);
-            this.Controls.Add(this.TuplesLB);
+            this.ClientSize = new System.Drawing.Size(549, 434);
+            this.Controls.Add(this.tuplePanel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewTableForm";
             this.Text = "Form4";
+            this.tuplePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox TuplesLB;
+        private System.Windows.Forms.Panel tuplePanel;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+
+
     }
 }
