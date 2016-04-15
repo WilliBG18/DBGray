@@ -47,3 +47,6 @@ D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.Propertie
 D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.ViewTableForm.resources
 D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csproj.GenerateResource.Cache
 D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.InsertTupleForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.exe.config
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.exe
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.pdb
