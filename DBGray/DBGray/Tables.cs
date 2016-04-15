@@ -125,6 +125,8 @@ namespace DBGray
         {
             int numCol = GetNumCollumns();
             Type[] st = new Type[numCol];
+            if (numCol == 0)
+                return st;
 
             string query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA . COLUMNS WHERE TABLE_SCHEMA = 'dbGray' AND TABLE_NAME = '" + table + "';";
             MySqlConnection connection = new MySqlConnection(conn.GetConStr());
