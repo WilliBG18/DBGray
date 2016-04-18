@@ -50,3 +50,14 @@ D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.InsertTup
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.exe.config
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.exe
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.pdb
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.exe
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\DBGray.pdb
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\bin\Debug\MySql.Data.dll
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csprojResolveAssemblyReference.cache
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.CredentialsForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.DatabasesForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.DBTablesForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.InsertTupleForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.Properties.Resources.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.ViewTableForm.resources
+C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csproj.GenerateResource.Cache

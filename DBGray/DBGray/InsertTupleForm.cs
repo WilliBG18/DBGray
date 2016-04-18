@@ -16,7 +16,8 @@ namespace DBGray
         Tables tables; 
         ConnString conn;
         TextBox[] txtBoxes;
-        readonly int TEXTBOX_WIDTH = 100;
+        readonly int TEXTBOX_LENGTH = 22;
+        readonly int TEXBOX_WIDTH = 100;
         string table;
 
         public InsertTupleForm(ConnString cs, string table)
@@ -55,10 +56,10 @@ namespace DBGray
                 a.Location = new Point(pointX, pointY);
                 InsertTuplePnl.Controls.Add(a);
                 InsertTuplePnl.Show();
-                pointX += TEXTBOX_WIDTH;
+                pointY += TEXTBOX_LENGTH;
             }
-            pointY += 30;
-            pointX = 0;
+            pointY = 0;
+            pointX += TEXBOX_WIDTH;
 
             txtBoxes = new TextBox[numColums];
             for (int x = 0; x < numColums; x++)
@@ -67,7 +68,7 @@ namespace DBGray
                 txtBoxes[x].Location = new Point(pointX, pointY);
                 InsertTuplePnl.Controls.Add(txtBoxes[x]);
                 InsertTuplePnl.Show();
-                pointX += TEXTBOX_WIDTH;
+                pointY += TEXTBOX_LENGTH;
             }
         }
 
