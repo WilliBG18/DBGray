@@ -38,23 +38,25 @@
             // 
             this.InsertTuplePnl.AutoScroll = true;
             this.InsertTuplePnl.Controls.Add(this.hScrollBar1);
-            this.InsertTuplePnl.Location = new System.Drawing.Point(13, 13);
+            this.InsertTuplePnl.Location = new System.Drawing.Point(10, 11);
+            this.InsertTuplePnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InsertTuplePnl.Name = "InsertTuplePnl";
-            this.InsertTuplePnl.Size = new System.Drawing.Size(549, 441);
+            this.InsertTuplePnl.Size = new System.Drawing.Size(412, 358);
             this.InsertTuplePnl.TabIndex = 0;
             // 
             // hScrollBar1
             // 
-            this.hScrollBar1.Location = new System.Drawing.Point(229, 420);
+            this.hScrollBar1.Location = new System.Drawing.Point(172, 341);
             this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(80, 21);
+            this.hScrollBar1.Size = new System.Drawing.Size(60, 21);
             this.hScrollBar1.TabIndex = 0;
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(247, 488);
+            this.insertButton.Location = new System.Drawing.Point(185, 396);
+            this.insertButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(75, 23);
+            this.insertButton.Size = new System.Drawing.Size(56, 19);
             this.insertButton.TabIndex = 1;
             this.insertButton.Text = "Insert";
             this.insertButton.UseVisualStyleBackColor = true;
@@ -62,13 +64,14 @@
             // 
             // InsertTupleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 523);
+            this.ClientSize = new System.Drawing.Size(430, 425);
             this.Controls.Add(this.insertButton);
             this.Controls.Add(this.InsertTuplePnl);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "InsertTupleForm";
-            this.Text = "Form5";
+            this.Text = "Insert";
             this.InsertTuplePnl.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -58,19 +58,8 @@ namespace DBGray
         public void connectToDB(string database)
         {
             DBTablesForm form3 = new DBTablesForm(conn, database);
-
-            //mySqlConnection = new MySqlConnection();
-            //if (connection == false)
-            //{
-            //    mySqlConnection.ConnectionString = conn.GetConStr();
-            //    mySqlConnection.Open();
-            //    connection = true;
-            //}
-            //if (connection == true)
-            //{
-                MessageBox.Show("Connection to Database Successful");
-                form3.Show();
-            //}
+            MessageBox.Show("Connection to Database Successful");
+            form3.Show();
         }
     }
 }

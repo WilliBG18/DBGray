@@ -56,6 +56,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TablesLB);
             this.Name = "DBTablesForm";
+            this.Text = "Tables";
             this.ResumeLayout(false);
 
         }
