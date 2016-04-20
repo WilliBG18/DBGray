@@ -61,3 +61,4 @@ C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.Insert
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.Properties.Resources.resources
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.ViewTableForm.resources
 C:\Users\willi_000\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.csproj.GenerateResource.Cache
+D:\Users\Andrew\Documents\GitHub\DBGray\DBGray\DBGray\obj\Debug\DBGray.SQLForm.resources

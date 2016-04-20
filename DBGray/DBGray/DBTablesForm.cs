@@ -39,5 +39,11 @@ namespace DBGray
             Tables tables = new Tables(conn, table);
             tables.SelectTable();
         }
+
+        private void sqlButton_Click(object sender, EventArgs e)
+        {
+            SQLForm sqlForm = new SQLForm(conn);
+            sqlForm.Show();
+        }
     }
 }

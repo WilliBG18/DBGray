@@ -10,11 +10,6 @@ namespace DBGray
     {
         public string conStr;
 
-        public ConnString(string server, string userID, string password, string database)
-        {
-            conStr = "server=" + server + ";" + "uid=" + userID + ";" + "pwd=" + password + ";" + "database=" + database + ";";
-        }
-
         public ConnString(string server, string userID, string password)
         {
             conStr = "server=" + server + ";" + "uid=" + userID + ";" + "pwd=" + password + ";";
@@ -22,7 +17,7 @@ namespace DBGray
 
         public void AddDatabase(string database)
         {
-            conStr += "database=" + database + ";";
+            conStr += "database=" + database + "; Convert Zero Datetime=True";
         }
         
         public string GetConStr()
